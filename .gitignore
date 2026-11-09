@@ -1,0 +1,3 @@
+*.backup
+*_backup_*.txt
+bios_password_backup_*.txt
