@@ -83,6 +83,42 @@ clang -O3 -march=native -D_CRT_SECURE_NO_WARNINGS -o odissrea.exe odissrea.c
 
 Edit `target_hashes` in `odissrea.c` to crack a different hash. Change `g_salt` if the device has initialized FDM regions.
 
+### Crack session: `Ul1ss3` (blind test, 6-char leet-speak)
+
+```
+    ___  ___  _ ____ ____ ___  ____  __
+   / _ \/ _ \(_) __// __// _ \/ __/ / _\
+  / // / // / /\ \ _\ \ / , _/ _/  / _ \
+  \___/\___/_/___//___//_/|_/___/ /_/ \_\
+
+  -*- InsydeH2O BIOS Password Cracker v2.0 -*-
+  OdissREA Cracking Service (C) 2026
+  "We crack what others lock"
+  ARM SHA-256 HW accel + 8 threads
+
+  Algo: SHA256(SHA256(pw_pad128) || salt)
+  Target: 2 hash  Salt: FF x 32
+
+  --- Brute-force: 2 hash, 6 char max, 8 thread ---
+  Charset: ASCII 32-126 (95 chars)
+
+  251658240 tested, 50.3M/sec, 0/2 found
+  ...
+  428575031296 tested, 43.4M/sec, 0/2 found
+  >>> CRACKED h1-only: 'Ul1ss3' -> c353f8a6ffc3b59d...24431bb108 [PwPS0000]
+  >>> CRACKED dbl-SHA256: 'Ul1ss3' -> 920c16d6483d16b5...90765901 [SystemSupervisorPw]
+
+  Brute-force: 428720184405 pw in 9878s (43.4M/sec)
+
+  === OdissREA REPORT ===
+  [CRACKED] SystemSupervisorPw
+  [CRACKED] PwPS0000 (h1)
+
+  OdissREA v2.0 — job done. Insert next disk.
+```
+
+429 billion candidates tested in 2 hours 45 minutes. Password found at ~58% of the 6-char ASCII keyspace.
+
 ## Project Structure
 
 ```
