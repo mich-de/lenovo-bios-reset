@@ -5,7 +5,7 @@
 **Esito:** RISOLTO. Password supervisore = `qwerty` (match esatto dell'hash memorizzato).
 
 ## Dati di partenza
-- Driver: `SysPassword.efi` (PE32 AArch64, 61440 byte). Disasm: `SysPassword.asm` (llvm-objdump).
+- Driver: `firmware/SysPassword.efi` (PE32 AArch64, 61440 byte). Disasm: `firmware/SysPassword.asm` (llvm-objdump).
 - Hash memorizzati (UEFI vars):
   - `SystemSupervisorPw` = `FD780CB23B20DBDEE73E45682CF5AF08EF4FB042E1EE3CA6E63C049408207292`
   - `PwPS0000/PwPU0000` = `33796C56CA00FDEE83AB4A3BB7D71FAD7C4B0E0E90CE8C93670454C10AD0B72E`

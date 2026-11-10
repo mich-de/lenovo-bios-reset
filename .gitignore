@@ -1,3 +1,7 @@
 *.backup
-*_backup_*.txt
-bios_password_backup_*.txt
+
+# Non pertinenti al RE
+AVVIA_CHECKUP.bat
+LenovoCheckup_ARM64.exe
+LenovoCheckup_x64.exe
+build.cmd

@@ -1,0 +1,34 @@
+START 11/10/2026 11:40:54
+Privilege OK
+
+GUID: {42FCB444-8A72-446A-95EF-DBBB44820204}
+  SystemSupervisorPw : err=203
+  SystemSupervisorPW : err=203
+  SystemUserPw : err=203
+  SystemUserPW : err=203
+  PwPS0000 : err=203
+  PwPS0001 : err=203
+  PwPS0002 : err=203
+  PwPU0000 : err=203
+  PwPU0001 : err=203
+  PwPU0002 : err=203
+  SysPassword : err=203
+  SupervisorPassword : err=203
+
+GUID: {44B4FC42-728A-6A44-95EF-DBBB44820204}
+  SystemSupervisorPw : err=203
+  SystemSupervisorPW : err=203
+  SystemUserPw : err=203
+  SystemUserPW : err=203
+  PwPS0000 : err=203
+  PwPS0001 : err=203
+  PwPS0002 : err=203
+  PwPU0000 : err=203
+  PwPU0001 : err=203
+  PwPU0002 : err=203
+  SysPassword : err=203
+  SupervisorPassword : err=203
+
+Test: SecureBoot var
+  SecureBoot (1 bytes): 01
+DONE

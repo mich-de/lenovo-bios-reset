@@ -39,18 +39,20 @@ stored = SHA256(h1 || salt)
 
 | Path | Contenuto |
 |------|-----------|
-| `D:\lenovo\CLAUDE.md` | Istruzioni per LLM: contesto, legittimità, sommario tecnico |
-| `D:\lenovo\RE_SYSPASSWORD.md` | Note RE complete: algoritmo, salt, GUID, funzioni, validazioni |
-| `D:\lenovo\odissrea.c` / `odissrea.exe` | OdissREA — cracker C nativo ARM64 (~860K/sec) |
-| `D:\lenovo\odissrea_wordlist.ps1` | OdissREA wordlist — cracker PS h1+double-SHA256 |
-| `D:\lenovo\odissrea_lite.ps1` | OdissREA lite — cracker PS originale |
-| `D:\lenovo\reset_bios_password.ps1` | Script azzeramento variabili UEFI con backup |
-| `D:\lenovo\uefi_read_vars.ps1` | Script sola lettura variabili UEFI (richiede admin) |
-| `D:\lenovo\uefi_read_h3lo.txt` | Output lettura UEFI con password h3lo! attiva |
-| `D:\lenovo\bios_password_backup_20261110_001650.txt` | Backup valori UEFI originali |
-| `D:\lenovo\bios\pucn55ww.exe` | BIOS update originale |
-| `D:\bios_tmp\SysPassword.efi` | Driver estratto (PE32 AArch64) |
-| `D:\bios_tmp\SysPassword.asm` | Disassembly completo (10469 righe) |
+| `CLAUDE.md` | Istruzioni per LLM: contesto, legittimità, sommario tecnico |
+| `RE_SYSPASSWORD.md` | Note RE complete: algoritmo, salt, GUID, funzioni, validazioni |
+| `firmware/SysPassword.efi` | Driver estratto (PE32 AArch64) |
+| `firmware/SysPassword.asm` | Disassembly completo (10469 righe) |
+| `firmware/pucn55ww.txt` | BIOS release notes |
+| `tools/odissrea.c` / `.exe` | OdissREA — cracker C nativo ARM64 (~860K/sec) |
+| `tools/odissrea_wordlist.ps1` | OdissREA wordlist — cracker PS h1+double-SHA256 |
+| `tools/odissrea_lite.ps1` | OdissREA lite — cracker PS originale |
+| `tools/reset_bios_password.ps1` | Script azzeramento variabili UEFI con backup |
+| `tools/uefi_read_vars.ps1` | Script sola lettura variabili UEFI (richiede admin) |
+| `evidence/uefi_read_h3lo.txt` | Output lettura UEFI con password h3lo! attiva |
+| `evidence/uefi_read_debug.txt` | Output lettura UEFI debug |
+| `evidence/bios_password_backup_*.txt` | Backup valori UEFI originali |
+| `bios/pucn55ww.exe` | BIOS update originale |
 
 ## 5. Hash noti (TUTTI RISOLTI)
 
