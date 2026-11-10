@@ -1,0 +1,9 @@
+﻿sp 1
+dump_rom.ps1 380
+fw.cap 16749772
+fw.cap.guids.csv 14874
+fw.cap.report.txt 141522
+h2offt_files.txt 0
+h2offt_log.txt 0
+SysPassword.asm 472226
+SysPassword.efi 61440
