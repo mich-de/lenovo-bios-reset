@@ -1,0 +1,78 @@
+=== LENOVO_CAPABILITY_DATA_00
+istanze: 39
+Active=True | Capability=7 | DefaultValue=0 | IDs=65536 | InstanceName=ACPI\PNP0C14\GMZN_0
+Active=True | Capability=7 | DefaultValue=0 | IDs=131072 | InstanceName=ACPI\PNP0C14\GMZN_1
+Active=True | Capability=7 | DefaultValue=0 | IDs=196608 | InstanceName=ACPI\PNP0C14\GMZN_2
+Active=True | Capability=7 | DefaultValue=0 | IDs=262144 | InstanceName=ACPI\PNP0C14\GMZN_3
+Active=True | Capability=0 | DefaultValue=0 | IDs=327681 | InstanceName=ACPI\PNP0C14\GMZN_4
+Active=True | Capability=0 | DefaultValue=0 | IDs=327682 | InstanceName=ACPI\PNP0C14\GMZN_5
+Active=True | Capability=0 | DefaultValue=0 | IDs=393216 | InstanceName=ACPI\PNP0C14\GMZN_6
+Active=True | Capability=0 | DefaultValue=0 | IDs=720896 | InstanceName=ACPI\PNP0C14\GMZN_7
+Active=True | Capability=1 | DefaultValue=0 | IDs=917504 | InstanceName=ACPI\PNP0C14\GMZN_8
+Active=True | Capability=7 | DefaultValue=0 | IDs=1048576 | InstanceName=ACPI\PNP0C14\GMZN_9
+Active=True | Capability=0 | DefaultValue=0 | IDs=1179648 | InstanceName=ACPI\PNP0C14\GMZN_10
+Active=True | Capability=0 | DefaultValue=0 | IDs=1245184 | InstanceName=ACPI\PNP0C14\GMZN_11
+Active=True | Capability=1 | DefaultValue=0 | IDs=1310720 | InstanceName=ACPI\PNP0C14\GMZN_12
+Active=True | Capability=0 | DefaultValue=0 | IDs=1376256 | InstanceName=ACPI\PNP0C14\GMZN_13
+Active=True | Capability=0 | DefaultValue=0 | IDs=1441792 | InstanceName=ACPI\PNP0C14\GMZN_14
+Active=True | Capability=0 | DefaultValue=0 | IDs=1507328 | InstanceName=ACPI\PNP0C14\GMZN_15
+Active=True | Capability=0 | DefaultValue=0 | IDs=1572864 | InstanceName=ACPI\PNP0C14\GMZN_16
+Active=True | Capability=0 | DefaultValue=0 | IDs=1638400 | InstanceName=ACPI\PNP0C14\GMZN_17
+Active=True | Capability=0 | DefaultValue=0 | IDs=1703936 | InstanceName=ACPI\PNP0C14\GMZN_18
+Active=True | Capability=0 | DefaultValue=0 | IDs=1769472 | InstanceName=ACPI\PNP0C14\GMZN_19
+Active=True | Capability=5 | DefaultValue=0 | IDs=1835009 | InstanceName=ACPI\PNP0C14\GMZN_20
+Active=True | Capability=5 | DefaultValue=0 | IDs=1835010 | InstanceName=ACPI\PNP0C14\GMZN_21
+Active=True | Capability=0 | DefaultValue=0 | IDs=1900544 | InstanceName=ACPI\PNP0C14\GMZN_22
+Active=True | Capability=7 | DefaultValue=0 | IDs=17301504 | InstanceName=ACPI\PNP0C14\GMZN_23
+Active=True | Capability=7 | DefaultValue=0 | IDs=33882112 | InstanceName=ACPI\PNP0C14\GMZN_24
+Active=True | Capability=7 | DefaultValue=0 | IDs=50397185 | InstanceName=ACPI\PNP0C14\GMZN_25
+Active=True | Capability=7 | DefaultValue=0 | IDs=50397186 | InstanceName=ACPI\PNP0C14\GMZN_26
+Active=True | Capability=7 | DefaultValue=0 | IDs=50462720 | InstanceName=ACPI\PNP0C14\GMZN_27
+Active=True | Capability=3 | DefaultValue=0 | IDs=50528256 | InstanceName=ACPI\PNP0C14\GMZN_28
+Active=True | Capability=7 | DefaultValue=0 | IDs=67174400 | InstanceName=ACPI\PNP0C14\GMZN_29
+Active=True | Capability=7 | DefaultValue=0 | IDs=67239936 | InstanceName=ACPI\PNP0C14\GMZN_30
+Active=True | Capability=7 | DefaultValue=0 | IDs=67305473 | InstanceName=ACPI\PNP0C14\GMZN_31
+Active=True | Capability=7 | DefaultValue=0 | IDs=67305474 | InstanceName=ACPI\PNP0C14\GMZN_32
+Active=True | Capability=5 | DefaultValue=0 | IDs=67371008 | InstanceName=ACPI\PNP0C14\GMZN_33
+Active=True | Capability=7 | DefaultValue=0 | IDs=83886081 | InstanceName=ACPI\PNP0C14\GMZN_34
+Active=True | Capability=7 | DefaultValue=0 | IDs=83951616 | InstanceName=ACPI\PNP0C14\GMZN_35
+Active=True | Capability=7 | DefaultValue=0 | IDs=84148224 | InstanceName=ACPI\PNP0C14\GMZN_36
+Active=True | Capability=0 | DefaultValue=0 | IDs=84213760 | InstanceName=ACPI\PNP0C14\GMZN_37
+Active=True | Capability=0 | DefaultValue=0 | IDs=134283264 | InstanceName=ACPI\PNP0C14\GMZN_38
+=== LENOVO_CAPABILITY_DATA_01
+ERR: Oggetto non valido 
+=== LENOVO_DISCRETE_DATA
+ERR: Oggetto non valido 
+=== LENOVO_UTILITY_DATA
+istanze: 1
+Active=True | InstanceName=ACPI\PNP0C14\LSK20_0
+=== LENOVO_DISPATCHER_DATA
+istanze: 1
+Active=True | InstanceName=ACPI\PNP0C14\GMZN_0
+=== LENOVO_GAMEZONE_DATA
+istanze: 1
+Active=True | InstanceName=ACPI\PNP0C14\GMZN_0
+=== LENOVO_OTHER_METHOD
+istanze: 1
+Active=True | InstanceName=ACPI\PNP0C14\GMZN_0
+=== LENOVO_INTELLIGENT_OP_LIST
+istanze: 19
+Active=True | InstanceName=ACPI\PNP0C14\GMZN_0 | mode= | processname=
+Active=True | InstanceName=ACPI\PNP0C14\GMZN_1 | mode= | processname=
+Active=True | InstanceName=ACPI\PNP0C14\GMZN_2 | mode= | processname=
+Active=True | InstanceName=ACPI\PNP0C14\GMZN_3 | mode= | processname=
+Active=True | InstanceName=ACPI\PNP0C14\GMZN_4 | mode= | processname=
+Active=True | InstanceName=ACPI\PNP0C14\GMZN_5 | mode= | processname=
+Active=True | InstanceName=ACPI\PNP0C14\GMZN_6 | mode= | processname=
+Active=True | InstanceName=ACPI\PNP0C14\GMZN_7 | mode= | processname=
+Active=True | InstanceName=ACPI\PNP0C14\GMZN_8 | mode= | processname=
+Active=True | InstanceName=ACPI\PNP0C14\GMZN_9 | mode= | processname=
+Active=True | InstanceName=ACPI\PNP0C14\GMZN_10 | mode= | processname=
+Active=True | InstanceName=ACPI\PNP0C14\GMZN_11 | mode= | processname=
+Active=True | InstanceName=ACPI\PNP0C14\GMZN_12 | mode= | processname=
+Active=True | InstanceName=ACPI\PNP0C14\GMZN_13 | mode= | processname=
+Active=True | InstanceName=ACPI\PNP0C14\GMZN_14 | mode= | processname=
+Active=True | InstanceName=ACPI\PNP0C14\GMZN_15 | mode= | processname=
+Active=True | InstanceName=ACPI\PNP0C14\GMZN_16 | mode= | processname=
+Active=True | InstanceName=ACPI\PNP0C14\GMZN_17 | mode= | processname=
+Active=True | InstanceName=ACPI\PNP0C14\GMZN_18 | mode= | processname=

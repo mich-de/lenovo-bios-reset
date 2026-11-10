@@ -48,6 +48,34 @@ stored    = SHA256( h1 || 0xFF*32 )
           = FD780CB2 3B20DBDE E73E4568 2CF5AF08 EF4FB042 E1EE3CA6 E63C0494 08207292   ✓ MATCH
 ```
 
+## Validazione con password nota
+
+Algoritmo validato impostando password `A` dal BIOS e rileggendo le variabili UEFI.
+
+| Variabile | Valore letto | Valore atteso | Match |
+|-----------|-------------|--------------|-------|
+| SystemSupervisorPw | `A3E5BB914805F53F4E76324A73D156AB0ED5238549B2D885AB12450A13C7424E` | `SHA256(SHA256("A"+0x00*127) \|\| 0xFF*32)` | **SI** |
+| PwPS0001 | `3941D04D249C019DF8E2ADE684BB894BE1B6AD3B17A4378536BE3F005088D091` | `SHA256("A"+0x00*127)` = h1 intermedio | **SI** |
+| PwPS0000 | `00*32` | — | azzerato (cambio pw) |
+| PwPS0002 | `00*32` | — | azzerato (cambio pw) |
+| PwPU0000 | `00*32` | — | azzerato (no user pw) |
+
+### Scoperta: PwPS0001 memorizza h1 (hash intermedio senza salt)
+
+`PwPS0001` contiene `SHA256(buf128)` — il primo round di SHA-256 **prima** dell'applicazione del salt. Questo significa che il BIOS salva sia l'hash finale (con salt, in `SystemSupervisorPw`) sia l'hash intermedio (senza salt, in `PwPS0001`). `PwPS0001` è scrivibile da OS (non protetto da Variable Policy), quindi un attaccante potrebbe confrontare direttamente contro `SHA256(buf128)` senza conoscere il salt.
+
+## Variabili UEFI — mappa completa
+
+| Variabile | GUID | Contenuto | Protetta |
+|-----------|------|-----------|----------|
+| SystemSupervisorPw | {7f9102df-e999-4740-80a6-b2038512217b} | Hash finale (h1\|\|salt) | SI (Variable Policy) |
+| PwPS0000 | {e0ab6c1f-030c-4fcd-b155-7a11d6a4ce1a} | Hash password corrente (o zero) | NO |
+| PwPS0001 | {e0ab6c1f-030c-4fcd-b155-7a11d6a4ce1a} | Hash intermedio h1 (senza salt) | NO |
+| PwPS0002 | {e0ab6c1f-030c-4fcd-b155-7a11d6a4ce1a} | Hash password precedente | NO |
+| PwPU0000 | {e0ab6c1f-030c-4fcd-b155-7a11d6a4ce1a} | Hash user password | NO |
+| PwPSHistory | {e0ab6c1f-030c-4fcd-b155-7a11d6a4ce1a} | Contatore cambio password | NO |
+
 ## Da fare
-- `PwPS/PwPU` (`33796C56…`) usa lo stesso schema ma password diversa (non `qwerty`): da attaccare con wordlist più ampio.
-- Script di brute-force di riferimento in PowerShell (SHA256 doppio, padding ascii00, salt FFx32).
+- Validazione con password `h3lo!` (caratteri speciali)
+- `PwPS/PwPU` (`33796C56…`) usa lo stesso schema ma password diversa (non `qwerty`): da attaccare con wordlist più ampio
+- Verificare se il BIOS al boot controlla `SystemSupervisorPw` o `PwPS0001` — se controlla PwPS0001, il salt è irrilevante per il crack
