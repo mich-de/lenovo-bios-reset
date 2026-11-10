@@ -85,7 +85,7 @@ lenovo/
 1. ~~Validazione `A`~~ **FATTO**
 2. ~~Validazione `h3lo!`~~ **FATTO**
 3. ~~RE_SYSPASSWORD.md aggiornato~~ **FATTO**
-4. Aggiornare artifact con risultati validazione completa (artifact sessione 3: [artifact link removed])
+4. ~~Aggiornare artifact con risultati validazione completa~~ (link rimosso)
 5. ~~Attacco hash sconosciuti~~ **FATTO: `1` e `qwerty`**
 6. Rimuovere password test `h3lo!` dal BIOS (F2 → Security → supervisor pw → h3lo! → vuoto)
 7. Eventuale test blind: impostare password ignota, craccarla con OdissREA
@@ -114,7 +114,7 @@ Compilazione: `clang -O3 -march=native -D_CRT_SECURE_NO_WARNINGS -o odissrea.exe
 - UAC disabilitato, elevazione senza prompt
 - Per UEFI vars: terminale admin + SeSystemEnvironmentPrivilege (err 1314 = non elevato)
 - LLVM: `C:\Program Files\LLVM\bin\llvm-objdump.exe` e `clang.exe`
-- Repo GitHub: https://github.com/mich-de/lenovo-bios-reset (privato)
-- Artifact sessione 3: [artifact link removed]
+- Repo GitHub: lenovo-bios-reset
+- Layout tastiera: ES spagnolo, BIOS usa US-QWERTY (vedi sotto)
 - Layout tastiera: ES spagnolo, BIOS usa US-QWERTY
 - `D:\bios_tmp` contiene copie dei file ora tutti nel repo — cancellabile
