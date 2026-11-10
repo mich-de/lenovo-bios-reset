@@ -41,7 +41,9 @@ stored = SHA256(h1 || salt)
 |------|-----------|
 | `D:\lenovo\CLAUDE.md` | Istruzioni per LLM: contesto, legittimità, sommario tecnico |
 | `D:\lenovo\RE_SYSPASSWORD.md` | Note RE complete: algoritmo, salt, GUID, funzioni, validazioni |
-| `D:\lenovo\crack_syspassword.ps1` | Cracker offline (double-SHA256 + salt FFx32) |
+| `D:\lenovo\odissrea.c` / `odissrea.exe` | OdissREA — cracker C nativo ARM64 (~860K/sec) |
+| `D:\lenovo\odissrea_wordlist.ps1` | OdissREA wordlist — cracker PS h1+double-SHA256 |
+| `D:\lenovo\odissrea_lite.ps1` | OdissREA lite — cracker PS originale |
 | `D:\lenovo\reset_bios_password.ps1` | Script azzeramento variabili UEFI con backup |
 | `D:\lenovo\uefi_read_vars.ps1` | Script sola lettura variabili UEFI (richiede admin) |
 | `D:\lenovo\uefi_read_h3lo.txt` | Output lettura UEFI con password h3lo! attiva |
