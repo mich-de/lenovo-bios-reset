@@ -89,7 +89,18 @@ Algoritmo validato impostando password `A` dal BIOS e rileggendo le variabili UE
 
 Con password `A`, l'hash intermedio h1 era in **PwPS0001**. Con password `h3lo!` (impostata dopo), h1 è in **PwPS0002** e PwPS0001 conserva ancora l'hash di `A`. Il BIOS incrementa l'indice PwPS* a ogni cambio password, mantenendo gli hash precedenti come storico.
 
+## Hash sconosciuti — risolti
+
+Attacco con `crack_unknown_hashes.ps1` (h1-only, senza salt):
+
+| Hash | Variabile | Password | Metodo |
+|------|-----------|----------|--------|
+| `33796C56CA00FDEE83AB4A3BB7D71FAD7C4B0E0E90CE8C93670454C10AD0B72E` | PwPS0000/0001/PwPU0000 originale | **`1`** | h1 = SHA256(pad128) |
+| `E1B41A7593243882AD8B46746D025DF6722ABA1B9FA93D2D82523DB495CC80CF` | PwPS0002 originale (pre-test) | **`qwerty`** | h1 = SHA256(pad128) |
+
+Interpretazione: il precedente proprietario ha impostato prima `1`, poi cambiato in `qwerty`. PwPS conserva lo storico completo delle password precedenti come hash intermedi (h1 senza salt).
+
 ## Da fare
-- ~~Validazione con password `h3lo!` (caratteri speciali)~~ **FATTO — match confermato**
-- `PwPS/PwPU` (`33796C56…`) usa lo stesso schema ma password diversa (non `qwerty`): da attaccare con wordlist più ampio
+- ~~Validazione con password `h3lo!` (caratteri speciali)~~ **FATTO**
+- ~~Attacco hash sconosciuti `33796C56…` e `E1B41A75…`~~ **FATTO: `1` e `qwerty`**
 - Verificare se il BIOS al boot controlla `SystemSupervisorPw` o `PwPS0001` — se controlla PwPS0001, il salt è irrilevante per il crack

@@ -50,7 +50,7 @@ stored = SHA256(h1 || salt)
 | `D:\bios_tmp\SysPassword.efi` | Driver estratto (PE32 AArch64) |
 | `D:\bios_tmp\SysPassword.asm` | Disassembly completo (10469 righe) |
 
-## 5. Hash noti
+## 5. Hash noti (TUTTI RISOLTI)
 
 | Variabile | Hash | Password |
 |-----------|------|----------|
@@ -59,16 +59,18 @@ stored = SHA256(h1 || salt)
 | SystemSupervisorPw (test h3lo!) | `7717A14AA37D3F148222F7C2CC867BBBA62C9327AA1D978A08501875884DDB03` | `h3lo!` |
 | PwPS0001 (h1 di A) | `3941D04D249C019DF8E2ADE684BB894BE1B6AD3B17A4378536BE3F005088D091` | h1 senza salt |
 | PwPS0002 (h1 di h3lo!) | `6662A8EE24FA891FF03C434BA3AFB15892A28A053B7B9671A05501E49EF93B91` | h1 senza salt |
-| PwPS0000/0001/PwPU0000 (originale) | `33796C56CA00FDEE83AB4A3BB7D71FAD7C4B0E0E90CE8C93670454C10AD0B72E` | **sconosciuta** |
-| PwPS0002 (originale, pre-test) | `E1B41A7593243882AD8B46746D025DF6722ABA1B9FA93D2D82523DB495CC80CF` | **sconosciuta** |
+| PwPS0000/0001/PwPU0000 (originale) | `33796C56CA00FDEE83AB4A3BB7D71FAD7C4B0E0E90CE8C93670454C10AD0B72E` | **`1`** (h1 senza salt) |
+| PwPS0002 (originale, pre-test) | `E1B41A7593243882AD8B46746D025DF6722ABA1B9FA93D2D82523DB495CC80CF` | **`qwerty`** (h1 senza salt) |
+
+Storico password precedente proprietario: prima `1`, poi `qwerty`.
 
 ## 6. Da fare
 1. ~~Validazione `A`~~ **FATTO**
 2. ~~Validazione `h3lo!`~~ **FATTO**
 3. ~~RE_SYSPASSWORD.md aggiornato~~ **FATTO**
 4. Aggiornare artifact con risultati validazione completa
-5. Attaccare hash `33796C56...` con wordlist esteso (algoritmo certo)
-6. Rimuovere password di test `h3lo!` dal BIOS
+5. ~~Attaccare hash `33796C56...` con wordlist~~ **FATTO: `1` e `qwerty`**
+6. Rimuovere password di test `h3lo!` dal BIOS (manuale: F2 → Security → supervisor pw)
 
 ## 7. Info utili
 - UAC disabilitato, elevazione senza prompt
