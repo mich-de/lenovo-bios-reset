@@ -75,7 +75,21 @@ Algoritmo validato impostando password `A` dal BIOS e rileggendo le variabili UE
 | PwPU0000 | {e0ab6c1f-030c-4fcd-b155-7a11d6a4ce1a} | Hash user password | NO |
 | PwPSHistory | {e0ab6c1f-030c-4fcd-b155-7a11d6a4ce1a} | Contatore cambio password | NO |
 
+## Validazione 2: password `h3lo!` (caratteri speciali + numeri)
+
+| Variabile | Valore letto | Valore atteso | Match |
+|-----------|-------------|--------------|-------|
+| SystemSupervisorPw | `7717A14AA37D3F148222F7C2CC867BBBA62C9327AA1D978A08501875884DDB03` | `SHA256(SHA256("h3lo!"+0x00*123) \|\| 0xFF*32)` | **SI** |
+| PwPS0002 | `6662A8EE24FA891FF03C434BA3AFB15892A28A053B7B9671A05501E49EF93B91` | `SHA256("h3lo!"+0x00*123)` = h1 intermedio | **SI** |
+| PwPS0001 | `3941D04D249C019DF8E2ADE684BB894BE1B6AD3B17A4378536BE3F005088D091` | h1 di `A` (password precedente, conservato) | storico |
+| PwPS0000 | `00*32` | — | azzerato |
+| PwPU0000 | `00*32` | — | azzerato (no user pw) |
+
+### Scoperta: rotazione indice PwPS*
+
+Con password `A`, l'hash intermedio h1 era in **PwPS0001**. Con password `h3lo!` (impostata dopo), h1 è in **PwPS0002** e PwPS0001 conserva ancora l'hash di `A`. Il BIOS incrementa l'indice PwPS* a ogni cambio password, mantenendo gli hash precedenti come storico.
+
 ## Da fare
-- Validazione con password `h3lo!` (caratteri speciali)
+- ~~Validazione con password `h3lo!` (caratteri speciali)~~ **FATTO — match confermato**
 - `PwPS/PwPU` (`33796C56…`) usa lo stesso schema ma password diversa (non `qwerty`): da attaccare con wordlist più ampio
 - Verificare se il BIOS al boot controlla `SystemSupervisorPw` o `PwPS0001` — se controlla PwPS0001, il salt è irrilevante per il crack
