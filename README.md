@@ -41,28 +41,40 @@ The previous owner set `1` first, then changed to `qwerty`. PwPS* variables keep
 ## Project Structure
 
 ```
-├── README.md                  This file
-├── RE_SYSPASSWORD.md          Full reverse engineering notes
+├── README.md                     This file
+├── RE_SYSPASSWORD.md             Full reverse engineering notes
 ├── firmware/
-│   ├── SysPassword.efi        Target UEFI driver (PE32 AArch64, 61440 bytes)
-│   ├── SysPassword.asm        Complete disassembly (llvm-objdump, 10469 lines)
-│   └── pucn55ww.txt           BIOS release notes
+│   ├── SysPassword.efi           Target UEFI driver (PE32 AArch64, 61440 bytes)
+│   ├── SysPassword.asm           Complete disassembly (llvm-objdump, 10469 lines)
+│   ├── fw.cap                    Extracted UEFI capsule (used for salt verification)
+│   ├── fw.cap.guids.csv          GUID map from UEFITool
+│   ├── fw.cap.report.txt         UEFITool extraction report
+│   ├── pucn55ww.txt              BIOS release notes
+│   ├── lenovo-wmi.txt            Lenovo WMI interface notes
+│   └── bios_ext/                 Files extracted from BIOS update exe
+│       ├── H2OFFT-Wx64.exe       Insyde Flash Firmware Tool
+│       ├── PUCN55WW.cap          BIOS capsule
+│       └── platform.ini          Platform configuration
 ├── tools/
-│   ├── odissrea.c             OdissREA — fast C brute-force cracker
-│   ├── odissrea.exe           Compiled for ARM64 (~860K hash/sec)
-│   ├── odissrea_wordlist.ps1  PowerShell wordlist cracker (h1 + double-SHA256)
-│   ├── odissrea_lite.ps1      Original simple PowerShell cracker
-│   ├── reset_bios_password.ps1  UEFI variable reset (backup + zeroing)
-│   └── uefi_read_vars.ps1    Read-only dump of UEFI password variables
+│   ├── odissrea.c                OdissREA v2.0 — C cracker (ARM SHA-256 HW + multi-thread)
+│   ├── odissrea.exe              Compiled for ARM64 (~50M hash/sec)
+│   ├── odissrea_wordlist.ps1     PowerShell wordlist cracker (h1 + double-SHA256)
+│   ├── odissrea_lite.ps1         Original simple PowerShell cracker
+│   ├── reset_bios_password.ps1   UEFI variable reset (backup + zeroing)
+│   ├── uefi_read_vars.ps1        Read-only dump of UEFI password variables
+│   ├── dump_rom.ps1              SPI flash dump script
+│   ├── test_h2offt.ps1           H2OFFT flash tool test script
+│   ├── h2offt_files.txt          H2OFFT extraction log
+│   └── h2offt_log.txt            H2OFFT execution log
 ├── evidence/
-│   ├── uefi_read_h3lo.txt     UEFI dump with test password h3lo! active
-│   ├── uefi_read_debug.txt    Debug UEFI dump
+│   ├── uefi_read_h3lo.txt        UEFI dump with test password h3lo! active
+│   ├── uefi_read_debug.txt       Debug UEFI dump
 │   └── bios_password_backup_*.txt  Original UEFI variable backup
 └── bios/
-    └── pucn55ww.exe           BIOS update capsule (source for driver extraction)
+    └── pucn55ww.exe              BIOS update capsule (source for driver extraction)
 ```
 
-### OdissREA — Fast Brute-Force Cracker
+### OdissREA v2.0 — Fast Brute-Force Cracker
 
 ```
     ___  ___  _ ____ ____ ___  ____  __
@@ -70,22 +82,45 @@ The previous owner set `1` first, then changed to `qwerty`. PwPS* variables keep
   / // / // / /\ \ _\ \ / , _/ _/  / _ \
   \___/\___/_/___//___//_/|_/___/ /_/ \_\
 
-  -*- InsydeH2O BIOS Password Cracker v1.0 -*-
+  -*- InsydeH2O BIOS Password Cracker v2.0 -*-
 ```
 
-Compiled C cracker, ~860K hashes/sec on Snapdragon X Plus (single-threaded).
+Native ARM64 C cracker using **ARM SHA-256 hardware crypto extensions** and **multi-threading** (auto-detects CPU cores).
+
+**Performance on Snapdragon X Plus (10 cores):**
+
+| Version | Speed | Notes |
+|---------|-------|-------|
+| v1 PowerShell | ~5-10K/sec | PowerShell, single-threaded |
+| v1 C (software SHA) | ~860K/sec | C -O3, software SHA-256 |
+| **v2 C (ARM HW)** | **50.3M/sec** | ARM SHA-256 HW + 10 threads |
+
+**Estimated brute-force times (printable ASCII 32-126):**
+
+| Password length | Keyspace | Time |
+|-----------------|----------|------|
+| 4 chars | 83M | <2 sec |
+| 5 chars | 7.9B | ~2.6 min |
+| 6 chars | 735B | ~4 hours |
+| 6 chars (a-z0-9 only) | 2.2B | ~44 sec |
+| 8 chars (a-z0-9 only) | 2.8T | ~15 hours |
 
 ```bash
-# Compile
+# Compile (requires LLVM/Clang with ARM crypto support)
 cd tools
-clang -O3 -o odissrea.exe odissrea.c
+clang -O3 -march=native -o odissrea.exe odissrea.c
 
-# Brute-force up to 4 chars (printable ASCII)
+# Brute-force up to 4 chars, all available threads
 ./odissrea.exe -b 4
+
+# Brute-force up to 6 chars, 8 threads
+./odissrea.exe -b 6 -t 8
 
 # Wordlist attack + brute-force fallback
 ./odissrea.exe rockyou.txt -b 5
 ```
+
+Edit the `target_hashes` array in `odissrea.c` to crack a different hash. The salt (`0xFF × 32`) is hardcoded for this unit; change `g_salt` if your device has an initialized FDM region.
 
 ## UEFI Variable Map
 
