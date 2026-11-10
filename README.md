@@ -138,7 +138,7 @@ Edit `target_hashes` in `odissrea.c` to crack a different hash. Change `g_salt` 
 | | |
 |-|-|
 | **Model** | Lenovo IdeaPad Slim 5 14Q8X9 (83HL) |
-| **Serial** | 83HL |
+| **Model** | 83HL |
 | **BIOS** | InsydeH2O PUCN55WW |
 | **SoC** | Snapdragon X Plus X1P42100 (8 cores Oryon, Adreno X1-45, Hexagon NPU) |
 | **OS** | Windows 11 Home ARM64 |

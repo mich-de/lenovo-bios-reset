@@ -4,7 +4,7 @@
 
 - **Model**: Lenovo IdeaPad Slim 5 14Q8X9
 - **Machine type**: 83HL
-- **Serial**: 83HL
+- **Model**: 83HL
 - **SoC**: Snapdragon X Plus X1P42100 — 8 cores Oryon @ 3.4 GHz, Adreno X1-45 GPU, Hexagon NPU
 - **RAM**: 16 GB LPDDR5x
 - **Storage**: 512 GB NVMe SSD

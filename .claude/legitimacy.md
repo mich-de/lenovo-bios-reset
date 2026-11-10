@@ -2,7 +2,7 @@
 
 ## Ownership
 
-This laptop (Lenovo IdeaPad Slim 5 83HL, serial 83HL) is personally owned. It was purchased second-hand with a BIOS password set by the previous owner. The current owner has full legal right to access, modify, and reverse-engineer the firmware on their own hardware.
+This laptop (Lenovo IdeaPad Slim 5, model 83HL) is personally owned. It was purchased second-hand with a BIOS password set by the previous owner. The current owner has full legal right to access, modify, and reverse-engineer the firmware on their own hardware.
 
 ## What we do
 

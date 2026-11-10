@@ -159,5 +159,5 @@ if ($fail -eq 0 -and $success -gt 0) {
     Write-Host "Se qualcosa va storto, il backup e' in: $backupFile" -ForegroundColor Yellow
 } elseif ($fail -gt 0) {
     Write-Host "`nAlcune variabili non sono state azzerate. Le variabili potrebbero essere protette." -ForegroundColor Red
-    Write-Host "Alternativa: contattare Lenovo al 02 30310000 con serial 83HL." -ForegroundColor Yellow
+    Write-Host "Alternativa: contattare Lenovo al 02 30310000 con il seriale del proprio laptop." -ForegroundColor Yellow
 }
