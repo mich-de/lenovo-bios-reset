@@ -1,0 +1,29 @@
+
+    [36m___  ___  _ ____ ____ ___  ____  __[0m
+   [36m/ _ \/ _ \(_) __// __// _ \/ __/ / _\[0m
+  [36m/ // / // / /\ \ _\ \ / , _/ _/  / _ \[0m
+  [36m\___/\___/_/___//___//_/|_/___/ /_/ \_\[0m
+
+  [33m-*- InsydeH2O BIOS Password Cracker v2.0 -*-[0m
+  [90mOdissREA Cracking Service (C) 2026[0m
+  [90m"We crack what others lock"[0m
+  [90mARM SHA-256 HW accel + 8 threads[0m
+
+  [35mAlgo:[0m SHA256(SHA256(pw_pad128) || salt)
+  [35mTarget:[0m 2 hash  [35mSalt:[0m FF x 32
+
+  [36m--- Wordlist: 920C16D6483D16B5176F6374518664CBCCF821BC5460AF447080ED2590765901 ---[0m
+
+  [36m--- Brute-force: 2 hash, 4 char max, 8 thread ---[0m
+  Charset: ASCII 32-126 (95 chars)
+
+[32m  >>> CRACKED h1-only: '1' -> 33796c56ca00fdee83ab4a3bb7d71fad7c4b0e0e90ce8c93670454c10ad0b72e [PwPS originale (1)][0m
+
+  Brute-force: 82317120 pw in 3s (27.4M/sec)
+
+  [36m=== OdissREA REPORT ===[0m
+  [31m[LOCKED][0m SystemSupervisorPw (qwerty)
+  [32m[CRACKED][0m PwPS originale (1)
+
+  [90mOdissREA v2.0 — job done. Insert next disk.[0m
+

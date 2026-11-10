@@ -1,0 +1,73 @@
+﻿=== Lenovo WMI classes ===
+LENOVO_UTILITY_EVENT
+LENOVO_LIGHTING_EVENT
+LENOVO_GAMEZONE_SMART_FAN_SETTING_EVENT
+LENOVO_GAMEZONE_KEYLOCK_STATUS_EVENT
+LENOVO_GAMEZONE_SMART_FAN_MODE_EVENT
+LENOVO_AI_SCENARIO_TYPE_EVENT
+LENOVO_REPORT_STATUS_TO_DISPATCHER_EVENT
+LENOVO_GAMEZONE_TEMP_EVENT
+LENOVO_GAMEZONE_THERMAL_MODE_EVENT
+LENOVO_AI_CHIP_EVENT
+LENOVO_GAMEZONE_LIGHT_PROFILE_CHANGE_EVENT
+LENOVO_DISPATCHER_EVENT
+LENOVO_GAMEZONE_OC_EVENT
+LENOVO_GAMEZONE_FAN_COOLING_EVENT
+LENOVO_GAMEZONE_POWER_CHARGE_MODE_EVENT
+LENOVO_BTKBD_EVENT
+LENOVO_GAMEZONE_GPU_TEMP_EVENT
+LENOVO_AC_PD_EVENT
+LENOVO_UTILITY_DATA
+LENOVO_FAN_TABLE_DATA
+LENOVO_FAN_METHOD
+LENOVO_GAMEZONE_DATA
+LENOVO_CPU_METHOD
+LENOVO_FAN_MAX_SPEED_DATA
+LENOVO_CAPABILITY_DATA_00
+LENOVO_INTERNAL_PANEL_REFRESH_RATE_DATA
+LENOVO_CAPABILITY_DATA_01
+LENOVO_DISCRETE_DATA
+LENOVO_GPU_OVERCLOCKING_DATA
+LENOVO_OTHER_METHOD
+LENOVO_PANEL_METHOD
+LENOVO_CPU_OVERCLOCKING_DATA
+LENOVO_MEMORY_OC_DATA
+LENOVO_INTELLIGENT_OP_LIST
+LENOVO_DISPATCHER_DATA
+LENOVO_GPU_METHOD
+LENOVO_LIGHTING_DATA
+LENOVO_GAMEZONE_CPU_OC_DATA
+LENOVO_LIGHTING_METHOD
+LENOVO_GAMEZONE_GPU_OC_DATA
+LENOVO_MEMORY_METHOD
+
+=== LENOVO_BIOS classes ===
+MSMCAEvent_SMBIOSError
+KerbSetPassword
+KerbSetPassword_Start
+KerbSetPassword_End
+KerbChangePassword
+KerbChangePassword_End
+KerbChangePassword_Start
+MS_SmBios
+MSSmBios_Sysid1394
+MSSmBios_Sysid1394List
+MSSmBios_SysidUUIDList
+MSSmBios_SMBiosEventlog
+MSSmBios_SysidUUID
+MSSmBios_RawSMBiosTables
+
+=== Lenovo_SetBiosPassword ===
+not found
+
+=== Lenovo_SaveBiosSettings ===
+not found
+
+=== Lenovo_BiosSetting ===
+not found
+
+=== Lenovo_GetBiosSelections ===
+not found
+
+=== LENOVO_CAPABILITY_DATA_00 ===
+[{"Active":true,"Capability":7,"DefaultValue":0,"IDs":65536,"InstanceName":"ACPI\\PNP0C14\\GMZN_0"},{"Active":true,"Capability":7,"DefaultValue":0,"IDs":131072,"InstanceName":"ACPI\\PNP0C14\\GMZN_1"},{"Active":true,"Capability":7,"DefaultValue":0,"IDs":196608,"InstanceName":"ACPI\\PNP0C14\\GMZN_2"},{"Active":true,"Capability":7,"DefaultValue":0,"IDs":262144,"InstanceName":"ACPI\\PNP0C14\\GMZN_3"},{"Active":true,"Capability":0,"DefaultValue":0,"IDs":327681,"InstanceName":"ACPI\\PNP0C14\\GMZN_4"},{"Active":true,"Capability":0,"DefaultValue":0,"IDs":327682,"InstanceName":"ACPI\\PNP0C14\\GMZN_5"},{"Active":true,"Capability":0,"DefaultValue":0,"IDs":393216,"InstanceName":"ACPI\\PNP0C14\\GMZN_6"},{"Active":true,"Capability":0,"DefaultValue":0,"IDs":720896,"InstanceName":"ACPI\\PNP0C14\\GMZN_7"},{"Active":true,"Capability":1,"DefaultValue":0,"IDs":917504,"InstanceName":"ACPI\\PNP0C14\\GMZN_8"},{"Active":true,"Capability":7,"DefaultValue":0,"IDs":1048576,"InstanceName":"ACPI\\PNP0C14\\GMZN_9"},{"Active":true,"Capability":0,"DefaultValue":0,"IDs":1179648,"InstanceName":"ACPI\\PNP0C14\\GMZN_10"},{"Active":true,"Capability":0,"DefaultValue":0,"IDs":1245184,"InstanceName":"ACPI\\PNP0C14\\GMZN_11"},{"Active":true,"Capability":1,"DefaultValue":0,"IDs":1310720,"InstanceName":"ACPI\\PNP0C14\\GMZN_12"},{"Active":true,"Capability":0,"DefaultValue":0,"IDs":1376256,"InstanceName":"ACPI\\PNP0C14\\GMZN_13"},{"Active":true,"Capability":0,"DefaultValue":0,"IDs":1441792,"InstanceName":"ACPI\\PNP0C14\\GMZN_14"},{"Active":true,"Capability":0,"DefaultValue":0,"IDs":1507328,"InstanceName":"ACPI\\PNP0C14\\GMZN_15"},{"Active":true,"Capability":0,"DefaultValue":0,"IDs":1572864,"InstanceName":"ACPI\\PNP0C14\\GMZN_16"},{"Active":true,"Capability":0,"DefaultValue":0,"IDs":1638400,"InstanceName":"ACPI\\PNP0C14\\GMZN_17"},{"Active":true,"Capability":0,"DefaultValue":0,"IDs":1703936,"InstanceName":"ACPI\\PNP0C14\\GMZN_18"},{"Active":true,"Capability":0,"DefaultValue":0,"IDs":1769472,"InstanceName":"ACPI\\PNP0C14\\GMZN_19"},{"Active":true,"Capability":5,"DefaultValue":0,"IDs":1835009,"InstanceName":"ACPI\\PNP0C14\\GMZN_20"},{"Active":true,"Capability":5,"DefaultValue":0,"IDs":1835010,"InstanceName":"ACPI\\PNP0C14\\GMZN_21"},{"Active":true,"Capability":0,"DefaultValue":0,"IDs":1900544,"InstanceName":"ACPI\\PNP0C14\\GMZN_22"},{"Active":true,"Capability":7,"DefaultValue":0,"IDs":17301504,"InstanceName":"ACPI\\PNP0C14\\GMZN_23"},{"Active":true,"Capability":7,"DefaultValue":0,"IDs":33882112,"InstanceName":"ACPI\\PNP0C14\\GMZN_24"},{"Active":true,"Capability":7,"DefaultValue":0,"IDs":50397185,"InstanceName":"ACPI\\PNP0C14\\GMZN_25"},{"Active":true,"Capability":7,"DefaultValue":0,"IDs":50397186,"InstanceName":"ACPI\\PNP0C14\\GMZN_26"},{"Active":true,"Capability":7,"DefaultValue":0,"IDs":50462720,"InstanceName":"ACPI\\PNP0C14\\GMZN_27"},{"Active":true,"Capability":3,"DefaultValue":0,"IDs":50528256,"InstanceName":"ACPI\\PNP0C14\\GMZN_28"},{"Active":true,"Capability":7,"DefaultValue":0,"IDs":67174400,"InstanceName":"ACPI\\PNP0C14\\GMZN_29"},{"Active":true,"Capability":7,"DefaultValue":0,"IDs":67239936,"InstanceName":"ACPI\\PNP0C14\\GMZN_30"},{"Active":true,"Capability":7,"DefaultValue":0,"IDs":67305473,"InstanceName":"ACPI\\PNP0C14\\GMZN_31"},{"Active":true,"Capability":7,"DefaultValue":0,"IDs":67305474,"InstanceName":"ACPI\\PNP0C14\\GMZN_32"},{"Active":true,"Capability":5,"DefaultValue":0,"IDs":67371008,"InstanceName":"ACPI\\PNP0C14\\GMZN_33"},{"Active":true,"Capability":7,"DefaultValue":0,"IDs":83886081,"InstanceName":"ACPI\\PNP0C14\\GMZN_34"},{"Active":true,"Capability":7,"DefaultValue":0,"IDs":83951616,"InstanceName":"ACPI\\PNP0C14\\GMZN_35"},{"Active":true,"Capability":7,"DefaultValue":0,"IDs":84148224,"InstanceName":"ACPI\\PNP0C14\\GMZN_36"},{"Active":true,"Capability":0,"DefaultValue":0,"IDs":84213760,"InstanceName":"ACPI\\PNP0C14\\GMZN_37"},{"Active":true,"Capability":0,"DefaultValue":0,"IDs":134283264,"InstanceName":"ACPI\\PNP0C14\\GMZN_38"}]

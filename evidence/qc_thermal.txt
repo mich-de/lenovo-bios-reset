@@ -1,0 +1,398 @@
+﻿CIMV2
+Cli
+Compal
+DEFAULT
+directory
+Hardware
+HyperVCluster
+Interop
+Microsoft
+msdtc
+PEH
+RSOP
+SECURITY
+SecurityCenter
+SecurityCenter2
+ServiceModel
+StandardCimv2
+subscription
+virtualization
+WMI
+
+
+Name     : Qualcomm Temperature Sensor Device
+DeviceID : ACPI\QCOM0C5A\64
+
+Name     : Qualcomm(R) I2C Bus Device
+DeviceID : ACPI\QCOM0C10\1
+
+Name     : Qualcomm(R) I2C Bus Device
+DeviceID : ACPI\QCOM0C10\2
+
+Name     : Qualcomm(R) I2C Bus Device
+DeviceID : ACPI\QCOM0C10\4
+
+Name     : Qualcomm(R) I2C Bus Device
+DeviceID : ACPI\QCOM0C10\5
+
+Name     : Qualcomm(R) I2C Bus Device
+DeviceID : ACPI\QCOM0C10\6
+
+Name     : Qualcomm(R) I2C Bus Device
+DeviceID : ACPI\QCOM0C10\8
+
+Name     : Qualcomm(R) I2C Bus Device
+DeviceID : ACPI\QCOM0C10\9
+
+Name     : Qualcomm(R) Analog-to-Digital Converter Device
+DeviceID : ACPI\QCOM0C11\0
+
+Name     : Qualcomm(R) Bus Device
+DeviceID : ACPI\QCOM0C16\F
+
+Name     : Qualcomm(R) Aqstic(TM)
+DeviceID : ADCM\VEN_QCOM&DEV_0CC1&SUBSYS_17AA3801\4&19B855FD&0&0
+
+Name     : Qualcomm(R) Secure Processor Subsystem Device
+DeviceID : ACPI\QCOM0C8D\2&DABA3FF&0
+
+Name     : Qualcomm(R) SSG Secure Services Device
+DeviceID : ACPI\QCOM06D8\0
+
+Name     : Snapdragon(R) X Plus - X1P42100 - Qualcomm(R) Oryon(TM) CPU
+DeviceID : ACPI\QUALCOMM_TECHNOLOGIES_INC_-_ARMV8_(64-BIT)_FAMILY_8_MODEL_1_REVISION_201\0
+
+Name     : Snapdragon(R) X Plus - X1P42100 - Qualcomm(R) Oryon(TM) CPU
+DeviceID : ACPI\QUALCOMM_TECHNOLOGIES_INC_-_ARMV8_(64-BIT)_FAMILY_8_MODEL_1_REVISION_201\1
+
+Name     : Snapdragon(R) X Plus - X1P42100 - Qualcomm(R) Oryon(TM) CPU
+DeviceID : ACPI\QUALCOMM_TECHNOLOGIES_INC_-_ARMV8_(64-BIT)_FAMILY_8_MODEL_1_REVISION_201\2
+
+Name     : Snapdragon(R) X Plus - X1P42100 - Qualcomm(R) Oryon(TM) CPU
+DeviceID : ACPI\QUALCOMM_TECHNOLOGIES_INC_-_ARMV8_(64-BIT)_FAMILY_8_MODEL_1_REVISION_201\3
+
+Name     : Snapdragon(R) X Plus - X1P42100 - Qualcomm(R) Oryon(TM) CPU
+DeviceID : ACPI\QUALCOMM_TECHNOLOGIES_INC_-_ARMV8_(64-BIT)_FAMILY_8_MODEL_1_REVISION_201\4
+
+Name     : Snapdragon(R) X Plus - X1P42100 - Qualcomm(R) Oryon(TM) CPU
+DeviceID : ACPI\QUALCOMM_TECHNOLOGIES_INC_-_ARMV8_(64-BIT)_FAMILY_8_MODEL_1_REVISION_201\5
+
+Name     : Snapdragon(R) X Plus - X1P42100 - Qualcomm(R) Oryon(TM) CPU
+DeviceID : ACPI\QUALCOMM_TECHNOLOGIES_INC_-_ARMV8_(64-BIT)_FAMILY_8_MODEL_1_REVISION_201\6
+
+Name     : Snapdragon(R) X Plus - X1P42100 - Qualcomm(R) Oryon(TM) CPU
+DeviceID : ACPI\QUALCOMM_TECHNOLOGIES_INC_-_ARMV8_(64-BIT)_FAMILY_8_MODEL_1_REVISION_201\7
+
+Name     : Qualcomm Modem skin Policy Device
+DeviceID : ACPI\VEN_QCOM&DEV_0CF9&SUBSYS_CRD08380&REV_0100\0
+
+Name     : Qualcomm(R) Aqstic(TM) BT ACX Transport Device
+DeviceID : ACPI\QCOM0D04\0
+
+Name     : Qualcomm Fan EC Interface Device
+DeviceID : ACPI\QCOM0D05\0
+
+Name     : Qualcomm(R) USB3(TM) eXtensible Host Controller
+DeviceID : ACPI\QCOM0D08\3
+
+Name     : Qualcomm(R) USB3(TM) eXtensible Host Controller
+DeviceID : ACPI\QCOM0D09\4
+
+Name     : Qualcomm(R) Display Services
+DeviceID : SWD\DRIVERENUM\{480B97A2-BA58-47C4-9979-BC8D922CC830}#QCDPPSLIBRARY&3&F2D97F6&0
+
+Name     : Qualcomm(R) Protection Domain Service Registry Device
+DeviceID : ACPI\VEN_QCOM&DEV_06DF&SUBSYS_CRD08380&REV_0008\2&DABA3FF&0
+
+Name     : Qualcomm Temperature Sensor Device
+DeviceID : ACPI\QCOM0CBF\1
+
+Name     : Altoparlanti (Qualcomm(R) Aqstic(TM) Audio Adapter Device)
+DeviceID : SWD\MMDEVAPI\{0.0.0.00000000}.{FE43021F-A570-411F-AD16-5AFBCF5889C4}
+
+Name     : Qualcomm NSP limits Policy Device
+DeviceID : ACPI\VEN_QCOM&DEV_0CF8&SUBSYS_CRD08380&REV_0100\0
+
+Name     : Qualcomm(R) Power Management FGBCL Device
+DeviceID : ACPI\QCOM0C77\2&DABA3FF&0
+
+Name     : Qualcomm ASD Audio Proxy APO
+DeviceID : SWD\DRIVERENUM\ASDPROXYAPO&5&23216376&0
+
+Name     : Qualcomm(R) ACPI Bridge Device
+DeviceID : ACPI\QCOM0427\0
+
+Name     : Qualcomm(R) System Manager PMIC GPIO Framework Extension Device
+DeviceID : ACPI\QCOM0C2D\1
+
+Name     : Qualcomm(R) Secure Kernel Extension
+DeviceID : ACPI\QCOM0CAC\2&DABA3FF&0
+
+Name     : Qualcomm(R) Peripheral Image Loader Device
+DeviceID : ACPI\VEN_QCOM&DEV_06E0&SUBSYS_CRD08380&REV_0008\2&DABA3FF&0
+
+Name     : Qualcomm(R) USB Type-C Device
+DeviceID : ACPI\QCOM0CA4\2&DABA3FF&0
+
+Name     : Qualcomm FastConnect 7800 Dual Bluetooth Adapter
+DeviceID : QCA_SHB\UART_H4_HMT\3&2DBA09C2&0&4097
+
+Name     : Qualcomm(R) SOC Partition Interface Device
+DeviceID : ACPI\QCOM06DD\2&DABA3FF&0
+
+Name     : Qualcomm Shared Memory Port Device
+DeviceID : ACPI\QCOM0C84\0
+
+Name     : Qualcomm(R) System Manager Device
+DeviceID : ACPI\QCOM0C85\0
+
+Name     : Qualcomm(R) Audio DSP Subsystem Device
+DeviceID : ACPI\QCOM0C1B\2&DABA3FF&0
+
+Name     : Qualcomm(R) Bus Device
+DeviceID : ACPI\QCOM0C88\0
+
+Name     : Qualcomm(R) Bus Device
+DeviceID : ACPI\QCOM0C88\1
+
+Name     : Qualcomm(R) Bus Device
+DeviceID : ACPI\QCOM0C88\2
+
+Name     : Qualcomm Audio Proxy APO
+DeviceID : SWD\DRIVERENUM\{976B816B-3475-40AC-952D-57532A612551}#PROXYAPO&6&3971CF7A&0
+
+Name     : Qualcomm(R) System Manager DiagRouter Device
+DeviceID : ACPI\QCOM0C13\2&DABA3FF&0
+
+Name     : Qualcomm GPU limits Policy Device
+DeviceID : ACPI\VEN_QCOM&DEV_0CF7&SUBSYS_CRD08380&REV_0100\0
+
+Name     : Qualcomm(R) DCF Device
+DeviceID : ACPI\QCOM06E7\2&DABA3FF&0
+
+Name     : Qualcomm Subsystem Dependency Device
+DeviceID : ACPI\QCOM0C20\2&DABA3FF&0
+
+Name     : Qualcomm(R) NSP0 CDSP SW Thermal Device
+DeviceID : ACPI\QCOM0CC3\2&DABA3FF&0
+
+Name     : Snapdragon(R) X Plus - X1P42100 - Qualcomm(R) Hexagon(TM) NPU
+DeviceID : ACPI\QCOM0D0A\2&DABA3FF&0
+
+Name     : Qualcomm Power Engine Plug-in Device
+DeviceID : ACPI\VEN_QCOM&DEV_0C17&SUBSYS_CRD08380&REV_0101\2&DABA3FF&0
+
+Name     : Qualcomm(R) Aqstic(TM) ACX Audio Device
+DeviceID : ADCM\VEN_QCOM&DEV_0CE6&SUBSYS_17AA3801\4&19B855FD&0&1
+
+Name     : Qualcomm(R) Wlan Thermal Mitigation Device
+DeviceID : ACPI\QCOM0CD5\2&DABA3FF&0
+
+Name     : Qualcomm(R) Aqstic(TM) Audio Adapter Device
+DeviceID : AUCD\VEN_QCOM&DEV_0C29&SUBSYS_17AA3801\5&1B67CA6A&0&0
+
+Name     : Qualcomm(R) Data IPC Router Device
+DeviceID : ACPI\QCOM0C0D\2&DABA3FF&0
+
+Name     : Qualcomm System Cache Device
+DeviceID : ACPI\VEN_QCOM&DEV_0C83&SUBSYS_CRD08380&REV_0001\2&DABA3FF&0
+
+Name     : Qualcomm Temperature Sensor Device
+DeviceID : ACPI\QCOM0C91\0
+
+Name     : Qualcomm(R) PCIe Platform Extension Plugin
+DeviceID : ACPI\QCOM0C96\0
+
+Name     : Qualcomm(R) TFTP Device
+DeviceID : ACPI\QCOM06DC\2&DABA3FF&0
+
+Name     : Qualcomm Human Presence Sensor
+DeviceID : ACPI\QCOM06D9\2&DABA3FF&0
+
+Name     : Qualcomm(R) Compute DSP Subsystem Device
+DeviceID : ACPI\QCOM0CB0\2&DABA3FF&0
+
+Name     : Qualcomm(R) System Manager SCM Device
+DeviceID : ACPI\QCOM04DD\0
+
+Name     : Qualcomm(R) System Manager Device
+DeviceID : ACPI\QCOM04DE\0
+
+Name     : Qualcomm(R) Bluetooth UART Transport Driver
+DeviceID : ACPI\QCOM0C6B\2&DABA3FF&0
+
+Name     : Qualcomm(R) Power Management PMIC Apps Device
+DeviceID : ACPI\QCOM0C2C\2&DABA3FF&0
+
+Name     : Qualcomm(R) Reset Power Error Notifier Device
+DeviceID : ACPI\QCOM06E1\2&DABA3FF&0
+
+Name     : Qualcomm CPU DCVS Cluster 1 Policy Device
+DeviceID : ACPI\VEN_QCOM&DEV_0CF5&SUBSYS_CRD08380&REV_0100\0
+
+Name     : Qualcomm(R) EVA Device
+DeviceID : ACPI\QCOM0CF1\1E
+
+Name     : Qualcomm(R) All-Ways Aware(TM) Sensor Platform Device - Keyboard
+DeviceID : ACPI\QCOM0694\2&DABA3FF&0
+
+Name     : Qualcomm(R) QcSocServiceKMDF Service
+DeviceID : ACPI\QCOM0D18\2&DABA3FF&0
+
+Name     : Qualcomm Secure Processor Device
+DeviceID : ACPI\QCOM0C87\2&DABA3FF&0
+
+Name     : Qualcomm(R) Audio RPC Daemon Device
+DeviceID : ACPI\QCOM0C82\2&DABA3FF&0
+
+Name     : Qualcomm(R) Aqstic(TM) ACX Static Endpoints Audio Device
+DeviceID : QCASD\STATICENDPOINTDEVICE0\5&23216376&0&0
+
+Name     : Qualcomm(R) System Manager Secapp Device
+DeviceID : ACPI\QCOM0CE4\0
+
+Name     : Qualcomm CPU DCVS Cluster 0 Policy Device
+DeviceID : ACPI\VEN_QCOM&DEV_0CF4&SUBSYS_CRD08380&REV_0100\0
+
+Name     : Qualcomm Audio Proxy APO
+DeviceID : SWD\DRIVERENUM\PROXYAPO&6&3971CF7A&0
+
+Name     : Qualcomm(R) Power Management PMIC Device
+DeviceID : ACPI\QCOM0C2B\2&DABA3FF&0
+
+Name     : Qualcomm(R) Subsys Base Thermal Mitigation Device
+DeviceID : ACPI\QCOM06E5\2&DABA3FF&0
+
+Name     : Qualcomm Temperature Sensor Device
+DeviceID : ACPI\QCOM0C58\0
+
+Name     : Qualcomm Temperature Sensor Device
+DeviceID : ACPI\QCOM0C58\1
+
+Name     : Qualcomm Temperature Sensor Device
+DeviceID : ACPI\QCOM0C59\0
+
+Name     : Qualcomm Temperature Sensor Device
+DeviceID : ACPI\QCOM0C59\1
+
+Name     : Qualcomm Temperature Sensor Device
+DeviceID : ACPI\QCOM0C5A\1
+
+Name     : Qualcomm ADC Temperature Monitor Device
+DeviceID : ACPI\QCOM0C5E\0
+
+Name     : Qualcomm(R) Aqstic(TM) Audio DSP and Calibration Manager
+DeviceID : ADSP\VEN_QCOM&DEV_0C22&SUBSYS_17AA3801\3&20F921FC&0&0
+
+Name     : Qualcomm ADC Temperature Monitor Device
+DeviceID : ACPI\QCOM0C5F\0
+
+Name     : Qualcomm(R) All-Ways Aware(TM) Sensor Platform Device - Display
+DeviceID : ACPI\QCOM0693\2&DABA3FF&0
+
+Name     : Qualcomm CPU DCVS Policy Device
+DeviceID : ACPI\VEN_QCOM&DEV_0CF3&SUBSYS_CRD08380&REV_0100\0
+
+Name     : Qualcomm(R) Power Management PMIC GLink Device
+DeviceID : ACPI\QCOM0C8E\2&DABA3FF&0
+
+Name     : Qualcomm WLAN Limits Policy Device
+DeviceID : ACPI\VEN_QCOM&DEV_0CFC&SUBSYS_CRD08380&REV_0100\0
+
+Name     : Qualcomm(R) Inter Processor Communication Interrupt Device
+DeviceID : ACPI\QCOM06C2\0
+
+Name     : Qualcomm(R) Bam Bus Device
+DeviceID : ACPI\QCOM0C0A\1
+
+Name     : Qualcomm(R) Bam Bus Device
+DeviceID : ACPI\QCOM0C0A\5
+
+Name     : Qualcomm(R) SPMI Bus Device
+DeviceID : ACPI\QCOM0C0B\1
+
+Name     : Gruppo microfoni (Qualcomm(R) Aqstic(TM) ACX Static Endpoints Audio Device)
+DeviceID : SWD\MMDEVAPI\{0.0.1.00000000}.{8659407A-CA4F-42F3-9780-3DA7DC0614A0}
+
+Name     : Qualcomm(R) System Manager GPIO Device
+DeviceID : ACPI\QCOM0C0C\0
+
+Name     : Qualcomm(R) SPI Bus Device
+DeviceID : ACPI\QCOM0C0E\B
+
+Name     : Qualcomm FastConnect 7800 Wi-Fi 7 High Band Simultaneous (HBS) Network Adapter
+DeviceID : PCI\VEN_17CB&DEV_1107&SUBSYS_E11517AA&REV_01\4&CDACDEC&0&0000
+
+Name     : Qualcomm(R) IOMMU Device
+DeviceID : ACPI\QCOM068F\0
+
+Name     : Qualcomm(R) IOMMU Device
+DeviceID : ACPI\QCOM068F\1
+
+Name     : Qualcomm(R) Slimbus Device
+DeviceID : ADSP\VEN_QCOM&DEV_0C0F&SUBSYS_17AA3801\3&20F921FC&0&0
+
+Name     : Qualcomm(R) FastRPC Device
+DeviceID : ACPI\QCOM0C5C\2&DABA3FF&0
+
+Name     : Qualcomm(R) QDCM Library
+DeviceID : SWD\DRIVERENUM\QDCMLIBRARY&3&F2D97F6&0
+
+Name     : Qualcomm System MMU Device
+DeviceID : ACPI\VEN_QCOM&DEV_0C09&SUBSYS_CRD08380&REV_0001\0
+
+Name     : Qualcomm System MMU Device
+DeviceID : ACPI\VEN_QCOM&DEV_0C09&SUBSYS_CRD08380&REV_0001\1
+
+Name     : Qualcomm ASD Audio Proxy APO
+DeviceID : SWD\DRIVERENUM\ASDPROXYAPO&6&799ED2F&0
+
+Name     : Qualcomm(R) Bus Device
+DeviceID : ACPI\QCOM0C16\16
+
+Name     : Qualcomm ADC Temperature Monitor Device
+DeviceID : ACPI\QCOM0C60\0
+
+Name     : Qualcomm(R) USB3(TM) eXtensible Host Controller
+DeviceID : ACPI\QCOM0CA1\2
+
+Name     : Qualcomm ADC Temperature Monitor Device
+DeviceID : ACPI\QCOM0C61\0
+
+Name     : Qualcomm(R) Connection Security Device
+DeviceID : ACPI\QCOM0CA8\0
+
+Name     : Qualcomm CPU Core parking Policy Device
+DeviceID : ACPI\VEN_QCOM&DEV_0CF2&SUBSYS_CRD08380&REV_0100\0
+
+Name     : Qualcomm(R) Adreno(TM) X1-45 GPU
+DeviceID : ACPI\VEN_QCOM&DEV_0D17&SUBSYS_CRD08380&REV_0001\0
+
+Name     : Qualcomm(R) System Manager Device
+DeviceID : ACPI\QCOM0C2F\2&DABA3FF&0
+
+Name     : Qualcomm(R) Power Management Battery Miniclass Device
+DeviceID : ACPI\QCOM0C2A\2&DABA3FF&0
+
+Name     : Qualcomm Modem BCL Policy Device
+DeviceID : ACPI\VEN_QCOM&DEV_0CFB&SUBSYS_CRD08380&REV_0100\0
+
+Name     : Qualcomm Audio Proxy APO
+DeviceID : SWD\DRIVERENUM\{E46C7D40-0C8A-4219-96EC-D5A85E71D2A4}#PROXYAPO&6&3971CF7A&0
+
+
+
+
+
+
+Name        : PlutonQcService
+Status      : Stopped
+DisplayName : Microsoft Pluton QC Service
+
+Name        : qcdpps
+Status      : Running
+DisplayName : qcdpps
+
+
+
+

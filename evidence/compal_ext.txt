@@ -1,0 +1,37 @@
+﻿=== GetExtSensorTemp (indici 0-15) ===
+  Sensor 0 : err
+  Sensor 1 : err
+  Sensor 2 : err
+  Sensor 3 : err
+  Sensor 4 : err
+  Sensor 5 : err
+  Sensor 6 : err
+  Sensor 7 : err
+  Sensor 8 : err
+  Sensor 9 : err
+  Sensor 10 : err
+  Sensor 11 : err
+  Sensor 12 : err
+  Sensor 13 : err
+  Sensor 14 : err
+  Sensor 15 : err
+
+=== GetPowerConsumption ===
+  err: Oggetto non valido 
+
+=== GetAdaptivePerfSta ===
+  err: Oggetto non valido 
+
+=== GetAPCTableNo ===
+  err: Oggetto non valido 
+
+=== PL1 Min/Max ===
+  err: Oggetto non valido 
+
+=== EC Fan/Temp via Compal_EcCtrl ===
+  CMD 0x50: err
+  CMD 0x51: err
+  CMD 0x52: err
+  CMD 0x60: err
+  CMD 0x61: err
+  CMD 0x62: err

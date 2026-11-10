@@ -1,0 +1,21 @@
+﻿=== Metodi disponibili ===
+  GetAdaptivePerfSta(OutDataBuffer1:UInt8, OutStatus:UInt16)
+  GetAPCTableNo(OutDataBuffer1:UInt8, OutStatus:UInt16)
+  SetAPCTableNo(TableNo:UInt8, OutStatus:UInt16)
+  GetPL1Min(OutDataBuffer1:UInt16, OutStatus:UInt16)
+  GetPL1Max(OutDataBuffer1:UInt16, OutStatus:UInt16)
+  GetPowerConsumption(OutDataBuffer1:UInt8, OutStatus:UInt16)
+  GetExtSensorTemp(Data:UInt8, OutDataBuffer1:UInt8, OutStatus:UInt16)
+
+=== GetExtSensorTemp ===
+
+=== GetPowerConsumption ===
+
+=== GetAdaptivePerfSta ===
+
+=== GetPL1Min ===
+
+=== GetPL1Max ===
+
+=== Compal_EcCtrl methods ===
+  CompalEcCtrlSet(CMD:UInt8, CMDData0:UInt8, CMDData1:UInt8, CMDData2:UInt8, CMDData3:UInt8, CMDData4:UInt8, Length:UInt8, OutDataBuffer1:UInt8, OutDataBuffer2:UInt8, OutDataBuffer3:UInt8, OutDataBuffer4:UInt8, OutDataBuffer5:UInt8, OutDataBuffer6:UInt8, OutDataBuffer7:UInt8, OutDataBuffer8:UInt8, OutStatus:UInt16)
